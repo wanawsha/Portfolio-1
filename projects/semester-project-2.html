@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Project 2 | Wanawsha Ahmad</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <section class="logo-container">
+            <h1>WANAWSHA AHMAD</h1>
+        </section>
+
+        <nav>
+            <a href="../index.html">HOME</a>
+            <a href="https://github.com/wanawsha" target="_blank">GITHUB PROFILE</a>
+        </nav>
+    </header>
+
+    <main class="project-article">
+        <a href="../index.html" class="back-link">← Back to portfolio</a>
+
+        <h2>Semester Project 2</h2>
+        <div class="share-link">
+            <button onclick="copyPageLink()">Share / Copy Link</button>
+        </div>
+        
+
+        <figure>
+            <img src="../images/bidsterafter.jpg" alt="Screenshot of the Bidsterr auction website" width="400px">
+            <figcaption>
+                Bidsterr auction website developed as part of Semester Project 2.
+            </figcaption>
+        </figure>
+
+        <section class="project-links">
+            <a href="https://bidsterr.netlify.app/" target="_blank">Live Site</a>
+            <a href="https://github.com/wanawsha/Semester-Project-2" target="_blank">GitHub README</a>
+        </section>
+
+        <section>
+            <h3>Project Overview</h3>
+
+            <p>
+                Bidsterr was completed as part of Semester Project 2 at Noroff.
+                The project is an auction-based web application where users can browse
+                listings, create auctions, place bids and manage their profile.
+            </p>
+
+            <p>
+                The project focused on building a functional front-end application connected
+                to the Noroff Auction API. It included authentication, dynamic API data,
+                user actions and a responsive user interface.
+            </p>
+        </section>
+
+        <section>
+            <h3>Assignment Requirements</h3>
+
+            <p>
+                The assignment required students to create an auction website using the
+                Noroff API and apply the front-end development skills learned throughout
+                the course.
+            </p>
+
+            <p>
+                As part of the assignment I:
+            </p>
+
+            <ul>
+                <li>Created a user interface for browsing auction listings</li>
+                <li>Used the Noroff Auction API to fetch and display listings</li>
+                <li>Added user registration and login functionality</li>
+                <li>Allowed logged-in users to create new listings</li>
+                <li>Allowed users to place bids on listings</li>
+                <li>Created profile pages where users can view their listings and bids</li>
+                <li>Added edit and delete functionality for user-created listings</li>
+                <li>Displayed listing details, bid history and auction end dates</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>What I Learned</h3>
+
+            <p>
+                Through this project I developed a better understanding of working with
+                authenticated API requests and user-specific data. I learned how to manage
+                tokens, display dynamic content and create user actions such as bidding,
+                creating listings and editing existing listings.
+            </p>
+
+            <p>
+                I also gained more experience with structuring larger JavaScript projects,
+                organizing API files, using local storage and creating a more complete
+                user flow from login to profile management.
+            </p>
+        </section>
+
+        <section>
+            <h3>Portfolio Improvements</h3>
+
+            <p>
+                For Portfolio 2, I reviewed the project and made an additional improvement
+                to prepare it for professional presentation.
+            </p>
+
+            <ul>
+                <li>Added a fallback image for listings without uploaded media</li>
+                <li>Improved the listings overview so empty image containers do not appear</li>
+                <li>Improved the visual consistency of listing cards on the home page</li>
+                <li>Reviewed the user experience on the listings page</li>
+                <li>Updated the README documentation</li>
+            </ul>
+
+            <p>
+                This improvement made the listings page look more complete and helped prevent
+                a broken or unfinished layout when a listing does not include an image.
+            </p>
+        </section>
+    </main>
+    <script>
+        function copyPageLink() {
+            navigator.clipboard.writeText(window.location.href);
+            alert("Link copied to clipboard!");
+        }
+    </script>
+</body>
+</html>

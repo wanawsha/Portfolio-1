@@ -22,13 +22,12 @@
         <a href="../index.html" class="back-link">← Back to portfolio</a>
 
         <h2>JavaScript Frameworks</h2>
-
-        <a class="go-to-link" href="https://onlineshop-jsframeworks.netlify.app/" target="_blank">
-            Visit Project →
-        </a>
+        <div class="share-link">
+            <button onclick="copyPageLink()">Share / Copy Link</button>
+        </div>
 
         <figure>
-            <img src="../images/onlineshop.jpg" alt="Screenshot of the JavaScript Frameworks online shop project" width="400px">
+            <img src="../images/onlineshopafter.jpeg" alt="Screenshot of the JavaScript Frameworks online shop project" width="400px">
             <figcaption>
                 Online shop built with Next.js, React and TypeScript for the JavaScript Frameworks course.
             </figcaption>
@@ -113,5 +112,11 @@
             </ul>
         </section>
     </main>
+    <script>
+        function copyPageLink() {
+            navigator.clipboard.writeText(window.location.href);
+            alert("Link copied to clipboard!");
+        }
+    </script>
 </body>
 </html>

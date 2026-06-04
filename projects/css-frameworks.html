@@ -23,12 +23,12 @@
 
         <h2>CSS Frameworks</h2>
 
-        <a class="go-to-link" href="https://wanawsha.github.io/Crew/" target="_blank" class="visit-project-btn">
-            Visit Project →
-        </a>
+        <div class="share-link">
+            <button onclick="copyPageLink()">Share / Copy Link</button>
+        </div>
 
         <figure>
-            <img src="../images/socialmedia.jpg" alt="Screenshot of the CSS Frameworks project" width="400px">
+            <img src="../images/socialmediaafter.jpeg" alt="Screenshot of the CSS Frameworks project" width="400px">
             <figcaption>
                 Social media website styled and refined as part of the CSS Frameworks course.
             </figcaption>
@@ -36,7 +36,7 @@
 
         <section class="project-links">
             <a href="https://wanawsha.github.io/Crew/" target="_blank">Live Site</a>
-            <a href="YOUR-GITHUB-README-LINK" target="_blank">GitHub README</a>
+            <a href="https://github.com/wanawsha/Crew" target="_blank">GitHub README</a>
         </section>
 
 
@@ -114,11 +114,10 @@
 
 
     </main>
-
     <script>
         function copyPageLink() {
             navigator.clipboard.writeText(window.location.href);
-            alert("Page link copied!");
+            alert("Link copied to clipboard!");
         }
     </script>
 </body>
